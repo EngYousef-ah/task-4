@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Advanced Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Start Navbar-->
+
+    <!-- 
+    This navbar is responsive to all devices as it contains 
+    the site name and useful sites such as About, Contact and Portfolio.
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container bg-primary">
+            <a class="navbar-brand bg-primary" href="#home">
+                <h2 class="bg-primary"> My Advanced Blog</h2>
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-white border-bottom ">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Advanced Blog</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- posts -->
+
+                <!--Each post is in the form of a card containing
+                 the name of the post, the details of the post, 
+                 and additional details about the post.
+                -->
+                <div class="card post">
+                    <div class="card-body">
+                        <h2 class="card-title">First Advanced Article Title</h2>
+                        <p class="card-text">This is some sample text for the first article. The full content
+                            of the article could be displayed here. Feel free to add more
+                            content and style it as needed.</p>
+                        <button href="#" class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="card post">
+                    <div class="card-body">
+                        <h2 class="card-title">Second Advanced Article Title</h2>
+                        <p class="card-text">This is some sample text for the second article. The full content
+                            of the article could be displayed here. Experiment with different
+                            layouts and design enhancements.</p>
+                        <button href="#" class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+                <div class="card post">
+                    <div class="card-body">
+                        <h2 class="card-title">Third Advanced Article Title</h2>
+                        <p class="card-text">This is some sample text for the third article. Challenge yourself
+                            to add more features and make the blog more interactive and
+                            user-friendly.</p>
+                        <button href="#" class="btn btn-primary">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">About the Bloge</h5>
+                        <p class="card-text mt-4">This blog is more advanced, requiring enhancements and restructuring.
+                            Consider adding
+                            more sections and making it dynamic with JavaScript.</p>
+                        <h5 class="mt-4">Useful Links</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-primary">Home</li>
+                        <li class="list-group-item text-primary">About the Author</li>
+                        <li class="list-group-item text-primary">Contact Us</li>
+                        <li class="list-group-item text-primary">Portfolio</li>
+                    </ul>
+
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recent Posts</h5>
+                    </div>
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item text-primary">How to Improve Your Blog</li>
+                        <li class="list-group-item text-primary">Understanding CSS Grid</li>
+                        <li class="list-group-item text-primary">10 JavaScript Tips and Tricks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Start Footer-->
+    <div class="footer">
+        <p>All Rights Reserved © 2024 | Designed by [Eng.Yousef Al Ahmed] <br>
+            "yousef2005alahmed@gmail.com" <br>"0982666803"<br>
+        </p>
+    </div>
+    <!--End Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--End the project -->
+</body>
+
+</html>
